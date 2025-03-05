@@ -255,7 +255,7 @@ defmodule JsonView do
     |> List.last()
     |> Macro.underscore()
     |> to_string()
-    |> String.trim_trailing("_view")
+    |> String.trim_trailing("_json")
     |> String.to_existing_atom()
   end
 end
